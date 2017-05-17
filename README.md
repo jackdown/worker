@@ -12,15 +12,33 @@ GNU General Public License 3 for more details.
 - php >= 5.5.9
 - Ubuntu 14.04, 16.04 or 16.10
 
-# Install (Ubuntu 14.04)
+# Install
+
+## Requirements
+
+* PHP >= 5.6  
+* Gearman and php-gearman (see https://launchpad.net/ubuntu/+source/php-gearman)
+* Redis and php-redis
+* MySQL-Client and php-pdo-mysql (if you use MySQL as backend)
+* Curl and php-curl (if you use CrateDB ad backend)
+
+## Ubuntu 14.04
 ````
 apt-get install redis-server php5-redis git
+````
 
+## Ubuntu 16.04
+````
+apt-get install redis-server php-redis git composer
+````
+
+## General
+````
 mkdir -p /opt/statusengine
 cd /opt/statusengine
 git clone https://github.com/statusengine/worker.git
 cd worker/
-chmod +x worker/bin/*
+chmod +x bin/*
 composer install
 ````
 
