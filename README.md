@@ -7,20 +7,14 @@ GNU General Public License 3 for more details.
 
 # Requirements
 - PHP's composer
-- CrateDB or MySQL
 - Redis
+- Optional CrateDB with php-curl
+- Optional MySQL with pdo-mysql
 - php >= 5.5.9
+- php-gearman
 - Ubuntu 14.04, 16.04 or 16.10
 
 # Install
-
-## Requirements
-
-* PHP >= 5.6  
-* Gearman and php-gearman (see https://launchpad.net/ubuntu/+source/php-gearman)
-* Redis and php-redis
-* MySQL-Client and php-pdo-mysql (if you use MySQL as backend)
-* Curl and php-curl (if you use CrateDB ad backend)
 
 ## Ubuntu 14.04
 ````
